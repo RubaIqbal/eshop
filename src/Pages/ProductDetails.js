@@ -42,6 +42,9 @@ export default function ProductDetails() {
     return (
         <>
         <div className="container">
+            <div className="mb-2">
+                <span className="pdp_key">{product_type}</span>
+            </div>
             <Row>
                 <Col xs={12} sm={12} md={5} lg={5} xl={5} className="py-3">
                     <div className="text-center px-2">
@@ -49,10 +52,9 @@ export default function ProductDetails() {
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={7} lg={7} xl={7} className="py-3">
-                    <p className="pdp_key">{product_type}</p>
                     <ProductHeading title={title} type="big"/>
                     <div className="plp_price_stock_wrap">
-                    <ProductPrice productprice={price} />
+                    <ProductPrice productprice={price} type="big" />
                     <StockAvailability availability={availability}/>
                     </div>
                     {/* <div className="rate_wrapper">

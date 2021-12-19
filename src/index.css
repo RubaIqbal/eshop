@@ -69,7 +69,6 @@ code {
 
 .plp_product_title{
   font-size: 18px;
-  font-weight: 600;
   line-height: 22px;
   color: #343434;
   overflow: hidden;
@@ -131,7 +130,7 @@ display: -webkit-box;
 }
 
 .plp_price{
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #343434;
 }

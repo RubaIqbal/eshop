@@ -32,7 +32,7 @@ import { useNavigate } from 'react-router-dom';
                         <div className="px-2 py-2">
                             <ProductHeading title={item.title} type="small" />
                             <div className="plp_price_stock_wrap">
-                                <ProductPrice productprice={item.price} />
+                                <ProductPrice productprice={item.price} type="small" />
                                 <StockAvailability availability={item.availability} />
                             </div>
                             <AddToCartButton btnText={"Add To Cart"} />
