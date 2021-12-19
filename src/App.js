@@ -12,7 +12,7 @@ import ProductDetails from "./Pages/ProductDetails";
 import DataContext from "./Context/DataContext";
 import Header from './Components/Header';
 import Footer from "./Components/Footer";
-// ggg
+
 function App() {
 
   const [productList, setProductList] = React.useState([]);

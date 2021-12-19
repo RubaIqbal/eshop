@@ -23,7 +23,7 @@ export default function ProductDetails() {
         setProduct(productJSON);
 
         return ()=>{
-            // localStorage.removeItem("product");
+            localStorage.removeItem("product");
         };
         
     }, []);
@@ -44,15 +44,13 @@ export default function ProductDetails() {
         <div className="container">
             <Row>
                 <Col xs={12} sm={12} md={5} lg={5} xl={5} className="py-3">
-                    <div>
-                    <img src={image_link} alt="" className={"pdp_product_img"} />
-                    {/* <ProductImage /> */}
+                    <div className="text-center px-2">
+                        <img src={image_link} alt="" className={"pdp_product_img"} />
                     </div>
                 </Col>
                 <Col xs={12} sm={12} md={7} lg={7} xl={7} className="py-3">
                     <p className="pdp_key">{product_type}</p>
                     <ProductHeading title={title} type="big"/>
-                    {/* <ProductPrice /> */}
                     <div className="plp_price_stock_wrap">
                     <ProductPrice productprice={price} />
                     <StockAvailability availability={availability}/>
@@ -72,8 +70,7 @@ export default function ProductDetails() {
                             <AddToCartButton btnText="Add To Cart" />
                         </Col>
                         <Col xs={6} sm={6} md={6} lg={6} xl={6} className="py-3">
-                        {/* <Button variant="warning" className={"cart_btn"}>Buy Now</Button> */}
-                        <BuyNow />
+                            <BuyNow />
                         </Col>
                         </Row>
                 </Col>
